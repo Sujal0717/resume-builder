@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder - Create Your Professional Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            padding: 60px 40px;
+            text-align: center;
+            max-width: 600px;
+            animation: slideUp 0.8s ease-out;
+        }
+        
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        h1 {
+            color: #667eea;
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        
+        .subtitle {
+            color: #666;
+            font-size: 18px;
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+        
+        .features {
+            text-align: left;
+            margin: 40px 0;
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 10px;
+        }
+        
+        .features h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .features ul {
+            list-style: none;
+        }
+        
+        .features li {
+            padding: 10px 0;
+            color: #333;
+            font-size: 16px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        .features li:last-child {
+            border-bottom: none;
+        }
+        
+        .features li:before {
+            content: "✓ ";
+            color: #667eea;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        
+        .access-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 18px 60px;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            margin-top: 30px;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+        }
+        
+        .access-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(102, 126, 234, 0.6);
+        }
+        
+        .access-button:active {
+            transform: translateY(-1px);
+        }
+        
+        .info {
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 2px solid #e0e0e0;
+            color: #999;
+            font-size: 14px;
+        }
+        
+        .tech-stack {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #aaa;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📄 Resume Builder</h1>
+        <p class="subtitle">Create, manage, and download your professional resume in minutes</p>
+        
+        <div class="features">
+            <h2>Key Features</h2>
+            <ul>
+                <li>Create professional resumes with multiple templates</li>
+                <li>Add personal information, education, and experience</li>
+                <li>Manage multiple resume versions</li>
+                <li>Download as PDF or export as XML</li>
+                <li>Modern and responsive user interface</li>
+                <li>Save and edit your resumes anytime</li>
+            </ul>
+        </div>
+        
+        <a href="https://resume-builder-demo.onrender.com/ResumeBuilder/" class="access-button" target="_blank">
+            🚀 Access Resume Builder Now
+        </a>
+        
+        <div class="info">
+            <p><strong>🌍 Public Access:</strong> Available to everyone worldwide</p>
+            <div class="tech-stack">
+                <p>Built with: Java • Servlets • JSP • XML • Docker</p>
+                <p>Hosted on: Cloud Platform • Free Forever</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
